@@ -1,0 +1,698 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Зубной мир  - Заботимся о вашей улыбке!</title>
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Links</title>
+  <!-- FontAwesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    .social-link {
+      font-size: 24px;
+      margin-right: 10px;
+    }
+  </style>
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="{% static 'website/images/faviconblack.svg'%}" type="svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./static/website/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header">
+
+    <div class="header-top">
+      <div class="container">
+
+        <ul class="contact-list">
+
+          <li class="contact-item">
+            <ion-icon name="mail-outline"></ion-icon>
+
+            <a href="mailto:zubnoy.mir@mail.ru" class="contact-link">zubnoy.mir@mail.ru</a>
+          </li>
+
+          <li class="contact-item">
+            <ion-icon name="call-outline"></ion-icon>
+
+            <a href="tel:+7(123123123)" class="contact-link">+123123123</a>
+          </li>
+
+        </ul>
+
+      <div class="social-media-section">
+        <span>Наши соц. сети: </span>
+        <ul class="social-list">
+
+          <li>
+            <a href="https://vk.com/yourprofile" class="social-link" target="_blank">
+              <i class="fab fa-vk"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/yourprofile/" class="social-link" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://t.me/yourtelegramprofile" class="social-link" target="_blank">
+              <i class="fab fa-telegram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/yourwhatsappnumber" class="social-link" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+          
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="header-bottom" data-header>
+      <div class="container">
+
+        <div class="logo-container">
+          <a href="#" class="logo-text">Зубной <img src="{% static 'website/images/faviconblack.svg' %}" alt="Логотип"> Мир</a>
+
+
+      </div>
+      
+
+        <nav class="navbar container" data-navbar>
+          <ul class="navbar-list">
+
+            <li>
+              <a href="#home" class="navbar-link" data-nav-link>Главная</a>
+            </li>
+
+            <li>
+              <a href="#service" class="navbar-link" data-nav-link>Услуги</a>
+            </li>
+
+            <li>
+              <a href="#price" class="navbar-link" data-nav-link>Цены</a>
+            </li>
+
+            <li>
+              <a href="#about" class="navbar-link" data-nav-link>О нас</a>
+            </li>
+
+
+            <li>
+              <a href="#" class="navbar-link" data-nav-link>Контакты</a>
+            </li>
+
+          </ul>
+        </nav>
+
+        <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+          <ion-icon name="menu-sharp" aria-hidden="true" class="menu-icon"></ion-icon>
+          <ion-icon name="close-sharp" aria-hidden="true" class="close-icon"></ion-icon>
+        </button>
+
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" id="home" style="background-image: url({% static 'website/images/hero-bg.png'})"
+        aria-label="hero">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="section-subtitle">Добро пожаловать!</p>
+
+            <h1 class="h1 hero-title">Мы заботимся о вашей улыбке</h1>
+
+            <p class="hero-text">
+              Посещайте стоматолога регулярно, чтобы поддерживать здоровье зубов и десен. 
+              Профессиональная чистка и осмотр помогут предотвратить заболевания полости рта 
+              и обеспечить красивую улыбку.
+            </p>
+            
+            <a href="tel:+1234567890" class="phone-number h1 hero-title" style="font-size: 3.5rem;">+7(996)593-93-93</a>
+            <p class="section-subtitle">Позвоните нам</br> Мы вас проконсультируем!</p>
+            
+
+          </div>
+
+          <figure class="hero-banner">
+            <img src="{% static 'website/images/hero-banner.png'%}" width="587" height="839" alt="hero banner" class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" id="service" aria-label="service">
+        <div class="container">
+
+          <p class="section-subtitle text-center">Наши услуги</p>
+
+          <h2 class="h2 section-title text-center">Какие услуги мы предоставляем</h2>
+
+          <ul class="service-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="{% static 'website/images/service-icon-1.png'%}" width="100" height="100" loading="lazy"
+                    alt="service icon" class="w-100">
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">Терапия</h3>
+
+                  <p class="card-text">
+                    Поддерживайте здоровье зубов.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="{% static 'website/images/service-icon-2.png' %}" width="100" height="100" loading="lazy"
+                    alt="service icon" class="w-100">
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">Хирургия</h3>
+
+                  <p class="card-text">
+                    Красивые и ровные зубы
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="{% static 'website/images/service-icon-3.png' %}" width="100" height="100" loading="lazy"
+                    alt="service icon" class="w-100">
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">Ортодонтия</h3>
+
+                  <p class="card-text">
+                    Голливудские зубы
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="service-banner">
+              <figure>
+                <img src="{% static 'website/images/service-banner.png' %}" width="409" height="467" loading="lazy"
+                  alt="service banner" class="w-100">
+              </figure>
+            </li>
+
+      
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="{% static 'website/images/service-icon-5.png' %}" width="100" height="100" loading="lazy"
+                    alt="service icon" class="w-100">
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">Ортопедия</h3>
+
+                  <p class="card-text">
+                    Бесплатный осмотр полости рта.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+        
+      </section>
+
+      <!-- 
+        - #PRICE
+      -->
+      
+      <section class="section price" id="price" aria-label="price">
+        <div class="container">
+          <p class="section-subtitle text-center">Наши Цены</p>
+          <h2 class="h2 section-title text-center">Услуги</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="service-category">
+                <h3 class="h3 service-header">Терапия</h3>
+                <div class="service-list">
+                  <div class="service-price">
+                    <h4 class="service-title">Услуга 1</h4>
+                    <p class="price">Цена: $100</p>
+                    <p class="description">Описание услуги 1</p>
+                  </div>
+                  <div class="service-price">
+                    <h4 class="service-title">Услуга 2</h4>
+                    <p class="price">Цена: $150</p>
+                    <p class="description">Описание услуги 2</p>
+                  </div>
+                  <!-- Добавьте остальные услуги ортопедии -->
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-category">
+                <h3 class="h3 service-header">Ортопедия</h3>
+                <div class="service-list">
+                  <div class="service-price">
+                    <h4 class="service-title">Услуга 1</h4>
+                    <p class="price">Цена: $200</p>
+                    <p class="description">Описание услуги 1</p>
+                  </div>
+                  <div class="service-price">
+                    <h4 class="service-title">Услуга 2</h4>
+                    <p class="price">Цена: $250</p>
+                    <p class="description">Описание услуги 2</p>
+                  </div>
+                  <!-- Добавьте остальные услуги хирургии -->
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-category">
+                <h3 class="h3 service-header">Хирургия</h3>
+                <div class="service-list">
+                  <div class="service-price">
+                    <h4 class="service-title">Услуга 1</h4>
+                    <p class="price">Цена: $300</p>
+                    <p class="description">Описание услуги 1</p>
+                  </div>
+                  <div class="service-price">
+                    <h4 class="service-title">Услуга 2</h4>
+                    <p class="price">Цена: $350</p>
+                    <p class="description">Описание услуги 2</p>
+                  </div>
+                  <!-- Добавьте остальные услуги терапии -->
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-category">
+                <h3 class="h3 service-header">Ортодонтия</h3>
+                <div class="service-list">
+                  <div class="service-price">
+                    <h4 class="service-title">Услуга 1</h4>
+                    <p class="price">Цена: $100</p>
+                    <p class="description">Описание услуги 1</p>
+                  </div>
+                  <div class="service-price">
+                    <h4 class="service-title">Услуга 2</h4>
+                    <p class="price">Цена: $150</p>
+                    <p class="description">Описание услуги 2</p>
+                  </div>
+                  <!-- Добавьте остальные услуги ортопедии -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </section>
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="{% static 'website/images/about-banner.png' %}" width="470" height="538" loading="lazy" alt="about banner"
+              class="w-100">
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">О нас</p>
+
+            <h2 class="h2 section-title">Мы заботимся о ваших зубках!</h2>
+
+            <p class="section-text section-text-1">
+              Наблюдайте, как ваша жизнь наполняется энергией и вдохновением. 
+              Мы поможем вам найти путь к счастью и удовлетворению, 
+              предоставляя качественные услуги и заботясь о вашем здоровье.
+            </p>
+
+            <a href="#" class="btn">Узнать больше</a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+      <!-- 
+        - #MAP
+      -->
+      <div class="map-text">
+        <div class="map-container">
+            <!-- Надпись над картой -->
+            <div class="map-heading">
+              <p class="section-subtitle text-center">Как нас найти</p>
+            </div>
+
+      <div class="container">
+        <div class="map-container">
+            <a href="https://yandex.ru/maps/org/zubnoy_mir/221321807884/?utm_medium=mapframe&utm_source=maps"></a>
+            <a href="https://yandex.ru/maps/2/saint-petersburg/category/dental_clinic/184106132/?utm_medium=mapframe&utm_source=maps"></a>
+            <iframe src="https://yandex.ru/map-widget/v1/org/zubnoy_mir/221321807884/?ll=30.313315%2C60.071271&z=18" width="1000" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+        </div>
+    </div>
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="section cta" aria-label="cta">
+        <div class="container">
+
+          <figure class="cta-banner">
+            <img src="{% static 'website/images/cta-banner.png' %}" width="1056" height="1076" loading="lazy" alt="cta banner"
+              class="w-100">
+          </figure>
+
+          <div class="cta-content">
+
+            <p class="section-subtitle">Записаться на прием к стоматологу</p>
+
+            <h2 class="h2 section-title">Мы открыты и будем рады вас видеть!</h2>
+
+            <a href="#" class="btn">Запись на прием</a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+      
+        
+    
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <div class="logo-container2">
+            <a href="#" class="logo-text2">Зубной <img src="{% static 'website/images/favicon.svg' %}" alt="Логотип"> Мир</a>
+  
+  
+        </div>
+
+          <p class="footer-text">
+            Мы создаем уютную и заботливую обстановку для каждого пациента. 
+            Здесь вы можете чувствовать себя комфортно и уверенно. Наши специалисты 
+            помогут вам в любой ситуации и ответят на все ваши вопросы.
+          </p>
+
+          <div class="schedule">
+            <div class="schedule-icon">
+              <ion-icon name="time-outline"></ion-icon>
+            </div>
+
+            <span class="span">
+              Понедельник - Пятница:<br>
+              9:00 - 21:00
+            </span>
+            <span class="span">
+              Суббота - Воскресенье:<br>
+              9:00 - 19:00
+            </span>
+          </div>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Навигация</p>
+          </li>
+
+          <li>
+            <a href="#home" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">Главная</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#about" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">О нас</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#service" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">Услуги</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#price" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">Цены</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Наши услуги</p>
+          </li>
+
+          <li>
+            <a href="#service" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">Терапия</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#service" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">Хирургия</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#service" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">Ортодонтия</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#service" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">Ортопедия</span>
+            </a>
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Как с нами связаться</p>
+          </li>
+
+          <li class="footer-item">
+            <div class="item-icon">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <address class="item-text">
+              г. Санкт-Петербург,<br>
+              Ул. Заречная 13к4
+            </address>
+          </li>
+
+          <li class="footer-item">
+            <div class="item-icon">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="tel:+123123" class="footer-link">+123123</a>
+          </li>
+
+          <li class="footer-item">
+            <div class="item-icon">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <a href="mailto:zubnoy.mir@mail.ru" class="footer-link">zubnoy.mir@mail.ru</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 Все права защищены
+        </p>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="https://vk.com/yourprofile" class="social-link" target="_blank">
+              <i class="fab fa-vk"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/yourprofile/" class="social-link" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://t.me/yourtelegramprofile" class="social-link" target="_blank">
+              <i class="fab fa-telegram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/yourwhatsappnumber" class="social-link" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="caret-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="{% static 'website/js/script.js' %}" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@latest/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core@latest/dist/ionic/ionic.js"></script>
+
+</body>
+
+</html>
