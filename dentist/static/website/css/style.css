@@ -379,6 +379,7 @@ body {
   background-size: cover;
   background-position: center;
   padding-block-end: calc(var(--section-padding) / 2);
+  margin-bottom: -100px;
 }
 
 .hero-content { margin-block-end: 50px; }
@@ -420,7 +421,10 @@ body {
 
 .service-banner { display: none; }
 
-.service { padding-block-end: 0; }
+.service { 
+  padding-block-end: 0;
+  margin-bottom: -20px;
+}
 
 .service .section-title { margin-block-end: 50px; }
 
@@ -456,6 +460,14 @@ body {
   margin-bottom: 20px; /* Расстояние до начала списка услуг */
 }
 
+.service-title {
+  color:rgb(8, 121, 226)
+}
+
+.price {
+  color:black
+}
+
 .service-header::after {
   content: '';
   position: absolute;
@@ -478,7 +490,10 @@ body {
   #ABOUT
 \*-----------------------------------*/
 
-.about { padding-block-end: 0; }
+.about { 
+  padding-block-end: 0;
+  margin-bottom: -100px;
+}
 
 .about-banner { margin-block-end: 50px; }
 
@@ -499,7 +514,12 @@ body {
   #DOCTOR
 \*-----------------------------------*/
 
+
+.doctor {
+  margin-bottom: -100px;
+}
 .doctor .section-title { margin-block-end: 50px; }
+
 
 .doctor-card .card-banner {
   border-radius: var(--radius-4);
